@@ -5,14 +5,16 @@ const API_KEY =
 const catBreedsUrl ='https://api.thecatapi.com/v1/breeds';
 const catImageUrl = 'https://api.thecatapi.com/v1/images';
 
-function fetchBreeds() {
-  return fetch(`${catBreedsUrl}/?api_key=${API_KEY}`).then(resp => resp.json());
+async function fetchBreeds() {
+  const resp = await fetch(`${catBreedsUrl}/?api_key=${API_KEY}`);
+  return await resp.json();
 }
 
-function fetchCatByBreed(catId) {
-  return fetch(
+async function fetchCatByBreed(catId) {
+  const response = await fetch(
     `${catImageUrl}/search?breed_ids=${catId}&api_key=${API_KEY}`
-  ).then(response => response.json());
+  );
+  return await response.json();
 }
 
 export { fetchBreeds, fetchCatByBreed };
