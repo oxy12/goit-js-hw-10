@@ -6,8 +6,8 @@ body{
 
 .breed-select {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 5px;
+    top: 15px;
     padding: 5px;
     font-size: 16px;
     border: none;
@@ -52,7 +52,7 @@ margin-left: 200px;
 .loader::after {
   left: auto;
   right: 48px;
-  animation-duration: 1.1s;
+  animation-duration: 3s;
 }
 
 @keyframes fill {
