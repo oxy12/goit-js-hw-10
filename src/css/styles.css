@@ -32,9 +32,9 @@ margin-left: 200px;
 }
 
 .loader {
-    width: 48px;
-    height: 48px;
-    position: relative;
+  width: 130px;
+  height: 48px;
+  display: inline-block;
   }
   .loader::before , .loader::after{
     content: '';
@@ -42,8 +42,9 @@ margin-left: 200px;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
-    width: 48em;
-    height: 48em;
+    width: 130px;
+    height: 48px;
+    color:black;
     background-image:
       radial-gradient(circle 10px, #FFF 100%, transparent 0),
       radial-gradient(circle 10px, #FFF 100%, transparent 0),
