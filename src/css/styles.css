@@ -7,7 +7,7 @@ body{
 .breed-select {
     position: absolute;
     left: 5px;
-    top: 15px;
+    top: 10px;
     padding: 5px;
     font-size: 16px;
     border: none;
@@ -31,12 +31,12 @@ margin-left: 200px;
     margin-right: 30px;
 }
 .loader {
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   position: relative;
   border-radius: 50%;
   color: #FF3D00;
-  animation: fill 1s ease-in infinite alternate;
+  animation: fill 2s ease-in infinite alternate;
 }
 .loader::before , .loader::after {
   content: '';
@@ -44,8 +44,8 @@ margin-left: 200px;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  left: 48px;
-  top: 0;
+  left: 38px;
+  top: 15px;
   animation: fill 2s ease-in infinite alternate;
 }
 
